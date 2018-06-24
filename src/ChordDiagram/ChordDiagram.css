@@ -1,0 +1,18 @@
+.chord-diagram {
+  width: 100px;
+}
+
+.chord-diagram .chord-name {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chord-diagram line,
+.chord-diagram circle {
+  stroke: #000000;
+}
+
+.chord-diagram circle.open {
+  fill: #ffffff;
+}
