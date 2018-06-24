@@ -33,10 +33,12 @@ export default class Controls extends Component {
   };
 
   handleAddChord = () => {
-    this.props.onAddChord(
-      this.state.selectedChordNote,
-      this.state.selectedChordType
-    );
+    const types = { major: "", minor: "m", "7": "7" };
+
+    this.props.onAddChord({
+      note: this.state.selectedChordNote,
+      type: types[this.state.selectedChordType]
+    });
   };
 
   render() {
@@ -47,7 +49,7 @@ export default class Controls extends Component {
           onChange={this.handleChordNoteChange}
         >
           {chordNotes.map(chordName => {
-            return <option>{chordName}</option>;
+            return <option key={chordName}>{chordName}</option>;
           })}
           }
         </select>

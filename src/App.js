@@ -5,9 +5,8 @@ import "./App.css";
 
 class App extends Component {
   state = { chords: [] };
-  handleAddChord = (note, type) => {
-    const newChord = `${note} ${type}`;
-    this.setState({ chords: this.state.chords.concat(newChord) });
+  handleAddChord = chord => {
+    this.setState({ chords: this.state.chords.concat(chord) });
   };
   render() {
     return (
