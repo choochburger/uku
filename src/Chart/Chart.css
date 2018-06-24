@@ -1,0 +1,10 @@
+.Chart_container {
+  display: flex;
+  margin: 50px;
+}
+
+.Chart_chord {
+  border: 2px solid;
+  margin: 10px;
+  padding: 10px;
+}
