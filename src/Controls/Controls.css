@@ -1,0 +1,9 @@
+.Controls_container {
+  padding: 20px;
+  margin: 50px;
+}
+
+.Controls_select,
+.Controls_addButton {
+  margin: 0 10px;
+}
