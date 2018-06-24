@@ -6,6 +6,9 @@ import classNames from "classnames";
 export default function ChordDiagram({ note, type = "" }) {
   const chordName = `${note}${type}`;
   const notes = chords[chordName];
+  if (!notes) {
+    throw Error(`${chordName} is not defined`);
+  }
   return (
     <div className="chord-diagram">
       <div className="chord-name">{chordName}</div>
